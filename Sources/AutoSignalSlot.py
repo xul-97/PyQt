@@ -16,7 +16,7 @@ class AutoSignalSlot(QWidget):
         #self.okBtn.clicked.connect(self.on_okButton_clicked)
 
     @QtCore.pyqtSlot()
-    def on_okButton_clicked(self):
+    def on_okBtn_clicked(self): #自动绑定信号与槽时，槽函数命名必须为on_对象名_信号名
         print("点击了ok按钮")
 
 if __name__ == "__main__":
